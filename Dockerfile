@@ -7,6 +7,10 @@
 # Pull base image.
 FROM dockerfile/java:oracle-java8
 
+# Install supervisor
+RUN apt-get -y install build-essential python-setuptools && \
+  easy_install supervisor
+
 ENV ES_PKG_NAME elasticsearch-1.4.2
 
 # Install Elasticsearch.
