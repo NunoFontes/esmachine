@@ -12,7 +12,7 @@ RUN apt-get update && \
   apt-get -y install build-essential python-setuptools && \
   easy_install supervisor
 
-ENV ES_PKG_NAME elasticsearch-1.4.2
+ENV ES_PKG_NAME elasticsearch-1.3.4
 
 # Install Elasticsearch.
 RUN \
