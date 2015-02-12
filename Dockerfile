@@ -23,16 +23,17 @@ RUN \
   mv /$ES_PKG_NAME /elasticsearch
 
 # Define mountable directories.
-VOLUME ["/data"]
+#VOLUME ["/data"]
 
 # Mount elasticsearch.yml config
-#ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
+# ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
 # Define working directory.
-WORKDIR /data
+# WORKDIR /data
 
 # Define default command.
-CMD ["/elasticsearch/bin/elasticsearch"]
+#CMD ["/elasticsearch/bin/elasticsearch"]
+CMD ["/bin/bash"]
 
 # Expose ports.
 #   - 9200: HTTP
